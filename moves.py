@@ -49,23 +49,3 @@ for match in mycol.find(qb.get_query_list(), {"moves": {"$slice": sliceSize}, "_
         listEndMoves.append(array[sliceSize-1])
         # print(array[sliceSize-1])
 print(Counter(listEndMoves).most_common(3))
-
-
-
-# db.developers.find({"moves.0": "d4","Result": "w"})
-# moveSize=len(data["moves"])
-# stringMove=""
-# for i in range(moveSize):
-#     stringMove += ""moves.""+str(i)+"" : "+data["moves"][i]+","
-#     if i == moveSize-1:
-#         stringMove += "moves."+str(i)+" : "+data["moves"][i]+" , ""Result: w"
-# print(stringMove)
-#
-# pat = re.compile(stringMove, re.I)
-# print(pat)
-# match = mycol.find({pat}, {"moves": {'$slice': 3}})
-# collection_cursor = eval(query)
-
-# print (match)
-#
-# for match in mycol.find({ "moves" : { "$in" : data["moves"] } }):
