@@ -15,7 +15,7 @@ mydb = myclient["chess"]
 mycol = mydb["developers"]
 side = 'w'
 
-r = requests.get('https://lichess.org/pwAEiqHT')
+r = requests.get('https://lichess.org/ViJO1Cvc')
 soup = BeautifulSoup(r.content, 'html.parser')
 
 all_tables=soup.find_all('div', {'class':'pgn'} )
