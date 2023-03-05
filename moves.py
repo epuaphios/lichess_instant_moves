@@ -48,4 +48,4 @@ for match in mycol.find(qb.get_query_list(), {"moves": {"$slice": sliceSize}, "_
     if len(array) == sliceSize:
         listEndMoves.append(array[sliceSize-1])
         # print(array[sliceSize-1])
-print(Counter(listEndMoves).most_common(3))
+print("Best Moves" + Counter(listEndMoves).most_common(3))
